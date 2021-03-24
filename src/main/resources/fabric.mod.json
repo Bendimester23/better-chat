@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "better-chat",
+  "version": "${version}",
+  "name": "Better Chat",
+  "description": "A mod to enchance the vanilla chat",
+  "authors": [
+    "Bendi"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/better-chat/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "hu.bendi.betterchat.client.BetterChatClient"
+    ],
+    "main": [
+      "hu.bendi.betterchat.BetterChat"
+    ]
+  },
+  "mixins": [
+    "better-chat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
